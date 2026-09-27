@@ -58,7 +58,9 @@ export type Room = {
   id: string;
   title: string;
   category: string;
-  roomType: string; // 'pricePerNight' ki jagah room type
+  // Optional: rooms.json me room type ka label `category` se aata hai.
+  roomType?: string;
+  pricePerNight: number;
   currency: "INR";
   capacity: number;
   roomSize: string;

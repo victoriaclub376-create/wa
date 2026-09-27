@@ -1,0 +1,386 @@
+[
+  {
+    "id": "deluxe-ocean-view",
+    "title": "Deluxe Ocean View Room",
+    "category": "Deluxe Room",
+    "pricePerNight": 18900,
+    "currency": "INR",
+    "capacity": 2,
+    "roomSize": "450 sq ft",
+    "bed": "King Bed",
+    "view": "Panoramic Sea View",
+    "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=85&w=1600&auto=format&fit=crop",
+    "imageAlt": "Deluxe ocean view bedroom with king bed and warm wooden paneling",
+    "description": "A serene retreat framed by warm timber, tactile linens and uninterrupted water views.",
+    "overview": [
+      "Designed with quiet sophistication, the Deluxe Ocean View Room layers natural oak, hand-finished brass and soft ambient lighting around a cloud-like king bed. Floor-to-ceiling windows open to a private outlook across the sea.",
+      "A dedicated writing desk, high-speed Wi-Fi and a 55-inch Smart TV balance effortless work with unhurried downtime. The in-room coffee bar is prepared with a curated selection of teas and locally roasted coffee.",
+      "The marble bathroom is a sanctuary of its own, complete with a rain shower, deep soaking tub and spa-grade amenities selected for restorative rituals."
+    ],
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=85&w=1800&auto=format&fit=crop",
+        "alt": "King bedroom with plush bedding and contemporary decor"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=85&w=1800&auto=format&fit=crop",
+        "alt": "Luxury marble bathroom with a freestanding bathtub"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkpMHNTdxRymTlH8JlFx4lOcmnnoeR4NqEOJ_w8rh-JpypeGiqSTzb3-8UB0yZVld0JfJObbJeSAwrsjm_3yCgTiU-qcDIPha3nZjlgnKOu3Qv68cXl8K2leCHg_7YreciEPCOASA=s1360-w1360-h1020-rw",
+        "alt": "Sunset sea view from the private balcony"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=85&w=1800&auto=format&fit=crop",
+        "alt": "Writing desk and coffee bar in a refined hotel room"
+      }
+    ],
+    "amenities": [
+      "High-Speed Wi-Fi",
+      "55-inch Smart TV",
+      "In-Room Safe Box",
+      "Mini Bar & Refrigerator",
+      "Tea & Coffee Station",
+      "Air Conditioning & Heating",
+      "24/7 Room Service",
+      "Luxury Plush Robes & Slippers"
+    ],
+    "unavailableDates": ["2026-09-23", "2026-09-24", "2026-09-30", "2026-10-01"]
+  },
+  {
+    "id": "executive-ocean-suite",
+    "title": "Executive Ocean Suite",
+    "category": "Executive Suite",
+    "pricePerNight": 28900,
+    "currency": "INR",
+    "capacity": 3,
+    "roomSize": "680 sq ft",
+    "bed": "King Bed + Daybed",
+    "view": "Private Balcony Sea View",
+    "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=85&w=1600&auto=format&fit=crop",
+    "imageAlt": "Executive suite with seating lounge, balcony and ocean view",
+    "description": "An expansive suite where a private lounge and balcony slow every moment down.",
+    "overview": [
+      "The Executive Ocean Suite introduces a generous living lounge to the Victoria Club experience, with low-slung seating, sculptural lighting and a wraparound balcony oriented toward the horizon.",
+      "Every considered detail supports an intuitive stay: fast Wi-Fi, a large Smart TV, discreet work surface and a refreshment bar for mornings spent at your own pace.",
+      "In the ensuite marble bathroom, a deep soaking tub, rain shower and dual vanity create a graceful ritual before evening plans."
+    ],
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=85&w=1800&auto=format&fit=crop",
+        "alt": "Executive suite with a lounge and warm-toned furnishings"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=85&w=1800&auto=format&fit=crop",
+        "alt": "Contemporary hotel bathroom with polished stone finishes"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWk3nOPcXECzYXBTDv_RTB1MU0t0QiTrcavNvvQ6L9cS0v69jazlgsK6V_WkpSnz5uHKZ8TEeUcOjAIC2PtC0qvuLL5SKoajUYsxD8ekt7jTLEpELjzweMV9gTpqJLHQzHYCW_Z5=s1360-w1360-h1020-rw",
+        "alt": "Blue ocean beyond a private balcony"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnhl7O-9sioPlI3zPw_dppgn3PnlQapEvTZFs72PdUnPJJrhDIW92ikdjo7IArhaz-gXPOPDWHpJQS5MYRWgVVEO182jLOWxA0onqLyC5ONRc0Doh6NKnneFQQ3ZLA0U_tbi_g=s1360-w1360-h1020-rw",
+        "alt": "Elegant suite workspace with coffee service"
+      }
+    ],
+    "amenities": [
+      "High-Speed Wi-Fi",
+      "65-inch Smart TV",
+      "In-Room Safe Box",
+      "Mini Bar & Refrigerator",
+      "Nespresso Coffee Station",
+      "Air Conditioning & Heating",
+      "24/7 Butler Service",
+      "Luxury Plush Robes & Slippers"
+    ],
+    "unavailableDates": ["2026-09-26", "2026-09-27", "2026-10-06", "2026-10-07"]
+  },
+  {
+    "id": "presidential-pool-residence",
+    "title": "Presidential Pool Residence",
+    "category": "Presidential Suite",
+    "pricePerNight": 54900,
+    "currency": "INR",
+    "capacity": 4,
+    "roomSize": "1,250 sq ft",
+    "bed": "King Bed + Twin Room",
+    "view": "Infinity Pool & Sea View",
+    "image": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn4D3CPnfj1qaGNcC5N4VcqlEyCjSP3nUlz4U6eSvx00S0Pt08J5mYGPMDGITr5Kw5XAi3PMa73hpLqIZv27ajKZE3RG20imdWcqXBkAfsOo7rkeJWNYC62jI1MmTfWhwZIe9y-XBycDqC1=s1360-w1360-h1020-rw",
+    "imageAlt": "Ultra-luxury villa bedroom opening to a private infinity pool deck",
+    "description": "A private residence with an infinity pool, marble bath and the sea on every horizon.",
+    "overview": [
+      "The Presidential Pool Residence is Victoria Club Hotel at its most private: a sun-drenched residence with a personal infinity pool, abundant indoor-outdoor living and a cinematic sea outlook.",
+      "A salon-style lounge, private dining setting, attentive butler service and state-of-the-art entertainment create room for gathering, working or simply retreating from the world.",
+      "The master marble bathroom combines a sculptural soaking tub, rain shower and elevated spa amenities, while the second bedroom makes every stay comfortably generous."
+    ],
+    "gallery": [
+      {
+        "src": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TdKTLHbKqecfLrV5b9vyLVy7y5LmjcJJSRS637OrsYD9y8CdWgTeZloxowFb8kY-0yY7Wo6LfxowRX4OvXi-JY-oMy1ombKd-4Q05PeH2K3W88LpKHz73eUIybfwX65wI9hu3qfQ=s1360-w1360-h1020-rw",
+        "alt": "Private pool residence with open-air terrace"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ThBq3UuERN4ml84pOVAnPii750fl2kHl_xG_n2fv8NW_jtLt6JfGA_4djjBekZh6ik1xxiJYQlueZxeiGCAlNo3t_p0OV1h6yk9KyG9o249ilv_wUnk52fJoYZSqCr1HyzVhffpQ=s1360-w1360-h1020-rw",
+        "alt": "Marble bathroom with luxury soaking tub"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=85&w=1800&auto=format&fit=crop",
+        "alt": "Infinity pool looking toward the sea"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RPTV0beEcmw1Xfi53M-cLZdPfXHb-KuP87gRAGTCHEdBTwfaTAYObY-cxJR3iM9R_37YXRXnJ-qsUIss070TVpfshuApe6T7GAuQO-87miuNliiW_ZfiptPQp1p0KEy3BEEa_Q=s1360-w1360-h1020-rw",
+        "alt": "Private living room and coffee service area"
+      }
+    ],
+    "amenities": [
+      "High-Speed Wi-Fi",
+      "75-inch Smart TV",
+      "In-Room Safe Box",
+      "Full Mini Bar & Refrigerator",
+      "Private Coffee Bar",
+      "Air Conditioning & Heating",
+      "24/7 Butler & Room Service",
+      "Luxury Plush Robes & Slippers"
+    ],
+    "unavailableDates": ["2026-09-21", "2026-09-22", "2026-10-10", "2026-10-11"]
+  },
+  {
+    "id": "classic-garden-room",
+    "title": "Classic Garden Room",
+    "category": "Classic Room",
+    "pricePerNight": 12900,
+    "currency": "INR",
+    "capacity": 2,
+    "roomSize": "380 sq ft",
+    "bed": "Queen Bed",
+    "view": "Garden View",
+    "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=85&w=1600&auto=format&fit=crop",
+    "imageAlt": "Classic garden room with queen bed and warm earthy tones",
+    "description": "A warm, easy room that opens onto the quiet green of the inner garden.",
+    "overview": [
+      "The Classic Garden Room pairs a plush queen bed with hand-woven textiles, warm timber floors and a window framing the hotel's inner garden. It is a room designed for slow mornings.",
+      "Thoughtful comforts include high-speed Wi-Fi, a 43-inch Smart TV, a curated tea tray and a compact writing nook lit for late reading.",
+      "The bathroom walks the same warm palette with a rain shower, brass fittings and botanical bath amenities."
+    ],
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=85&w=1800&auto=format&fit=crop",
+        "alt": "Queen bedroom with warm earthy textiles"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S6KFioKAcfrccY6iteRfhosGhvgJi6iL3f_xY04sh7GtzKhmdnIzzWV2zd0UWz3eotgALQNxlufB8HI-D4QDnrt19bQ0g7nDQ3OrqNO4LlaDZF96JONXB4-pbXcdKBVXJ2vJcR=s1360-w1360-h1020-rw",
+        "alt": "Cozy bedroom with soft evening lamps"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=85&w=1800&auto=format&fit=crop",
+        "alt": "Green garden visible from the window"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlaq1XPjzBQyFuCw5CRxnt7c_9yTAYoJdZNfKUHe6wgrHEOkSTBLZl9wUqKCCeUi5OG77qvCbstIeib62OHxbjPTOUZmPqpb_STVl16r4fohoHPPvzm_iInUoMrSgJAUcTcrvvW_g=s1360-w1360-h1020-rw",
+        "alt": "Elegant bathroom with rain shower"
+      }
+    ],
+    "amenities": [
+      "High-Speed Wi-Fi",
+      "43-inch Smart TV",
+      "In-Room Safe Box",
+      "Tea & Coffee Station",
+      "Air Conditioning & Heating",
+      "Daily Housekeeping",
+      "Garden Access",
+      "Luxury Toiletries"
+    ],
+    "unavailableDates": ["2026-09-25", "2026-10-02", "2026-10-03", "2026-10-08"]
+  },
+  {
+    "id": "premier-city-suite",
+    "title": "Premier City Suite",
+    "category": "Premier Suite",
+    "pricePerNight": 24500,
+    "currency": "INR",
+    "capacity": 2,
+    "roomSize": "560 sq ft",
+    "bed": "King Bed",
+    "view": "Jaipur Skyline View",
+    "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=85&w=1600&auto=format&fit=crop",
+    "imageAlt": "Premier suite with king bed and sweeping city views",
+    "description": "A bright corner suite with lounge seating and the pink city skyline at dusk.",
+    "overview": [
+      "The Premier City Suite occupies a quiet corner of the hotel, with a separate lounge, floor-to-ceiling glazing and an outlook over Jaipur's terracotta rooftops toward the hills.",
+      "A curated minibar, Nespresso station, generous work desk and 55-inch Smart TV make the suite equally suited to work trips and unhurried holidays.",
+      "The ensuite bathroom pairs a deep soaking tub with a rain shower, dual vanity and premium amenities."
+    ],
+    "gallery": [
+      {
+        "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmWrB5IflKycyYJ-ez5dcpogdblLQdv6gjtFUjFk3l7LEmUJa3TJgmLv7MgjPzNuG26tECY4OZwel5jmwwTNMHfOIZIwHlXvxbGyNSiXzcWzg2yXtWdZ8a0uzSDd57x1BNeNlbJ=s1360-w1360-h1020-rw",
+        "alt": "Suite bedroom with city-view windows"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=85&w=1800&auto=format&fit=crop",
+        "alt": "Hotel room overlooking the evening skyline"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=85&w=1800&auto=format&fit=crop",
+        "alt": "Lounge area with modern furnishings"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=85&w=1800&auto=format&fit=crop",
+        "alt": "Polished stone bathroom"
+      }
+    ],
+    "amenities": [
+      "High-Speed Wi-Fi",
+      "55-inch Smart TV",
+      "In-Room Safe Box",
+      "Mini Bar & Refrigerator",
+      "Nespresso Coffee Station",
+      "Air Conditioning & Heating",
+      "Evening Canapés",
+      "Luxury Plush Robes & Slippers"
+    ],
+    "unavailableDates": ["2026-09-28", "2026-09-29", "2026-10-12", "2026-10-13"]
+  },
+  {
+    "id": "heritage-club-room",
+    "title": "Heritage Club Room",
+    "category": "Heritage Room",
+    "pricePerNight": 16900,
+    "currency": "INR",
+    "capacity": 2,
+    "roomSize": "420 sq ft",
+    "bed": "King Bed",
+    "view": "Heritage Courtyard View",
+    "image": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWk05tbWkW3jEs-mMsF9BKHIwgPjgtkna2ubz2zaeeGjMNFg6kCUJX5A-UtXgP1Ah6txNswJQsjRYGE08skZ2hPsFvKlcqLLh43ynqOl_uzMGE-5vye4o3r-3YizhV1RhnW1IUkh=s1360-w1360-h1020-rw",
+    "imageAlt": "Heritage room with king bed, arches and Rajasthani accents",
+    "description": "Restored arches, carved wood and soft lamp light in the hotel's oldest wing.",
+    "overview": [
+      "The Heritage Club Room sits in the hotel's original wing, where restored arches, carved jharokha-inspired details and hand-block-printed fabrics honour the building's Rajasthani roots.",
+      "Modern comfort is quietly present: high-speed Wi-Fi, a 50-inch Smart TV, a well-stocked tea tray and blackout drapery for deep sleep.",
+      "The bathroom combines sandstone finishes with a rain shower and botanical bath amenities."
+    ],
+    "gallery": [
+      {
+        "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkMNcyI-caUch_BEja5utSp8S2tjT6yBpx1tV79Yxz_HkoXVP4p8-H1HrR8UKqm6eOM8Lxwdw05n4spzYm2FXJdn5SBF0gs_L1tSvbyJtec9ouR7op6Vsi2QnD6igHRr3VeEbpJ=s1360-w1360-h1020-rw",
+        "alt": "Heritage bedroom with warm lamps and carved wood"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?q=85&w=1800&auto=format&fit=crop",
+        "alt": "Luxury bed with layered linens"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=85&w=1800&auto=format&fit=crop",
+        "alt": "Traditional Rajasthani interior details"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnINVQdu01aYMaU3bd62sNsyKPsMo7_j3Y8cNdV-SAm479kZHNtK0ujhOdPFzcQ6UbvbfH4-2ZuX8aY2JgkyrSUnhT2nl2pzgiw1qknkyX-ZNveHVhG17YIBO2ep-5HUXh5cHs=s1360-w1360-h1020-rw",
+        "alt": "Classic bathroom with marble tub"
+      }
+    ],
+    "amenities": [
+      "High-Speed Wi-Fi",
+      "50-inch Smart TV",
+      "In-Room Safe Box",
+      "Mini Bar & Refrigerator",
+      "Tea & Coffee Station",
+      "Air Conditioning & Heating",
+      "Heritage Wing Access",
+      "Luxury Plush Robes & Slippers"
+    ],
+    "unavailableDates": ["2026-09-24", "2026-10-01", "2026-10-04", "2026-10-09"]
+  },
+  {
+    "id": "family-courtyard-suite",
+    "title": "Family Courtyard Suite",
+    "category": "Family Suite",
+    "pricePerNight": 33500,
+    "currency": "INR",
+    "capacity": 4,
+    "roomSize": "840 sq ft",
+    "bed": "King Bed + Two Twin Beds",
+    "view": "Courtyard View",
+    "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=85&w=1600&auto=format&fit=crop",
+    "imageAlt": "Family suite with lounge, two sleeping areas and courtyard view",
+    "description": "Two bedrooms, a shared lounge and the fountain courtyard just outside.",
+    "overview": [
+      "The Family Courtyard Suite spreads across two connected bedrooms and a central lounge, giving families and small groups room to gather and space to retreat.",
+      "The lounge carries a dining nook, games shelf, 65-inch Smart TV and a replenished refreshment bar, while both bedrooms have their own climate control and blackout curtains.",
+      "The family bathroom offers a bathtub for younger guests alongside a walk-in rain shower."
+    ],
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=85&w=1800&auto=format&fit=crop",
+        "alt": "Family lounge with seating and dining nook"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=85&w=1800&auto=format&fit=crop",
+        "alt": "Second bedroom with twin beds"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?q=85&w=1800&auto=format&fit=crop",
+        "alt": "Courtyard with fountain and seating"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkLtT_f6sdrLpo-LBdzMjDfGeApjacvlr37NQ6g9K3dahKbRGNy93hXZr_kEssRUVNrRxTGyzlAg-xs8rJLQjVf0forrzo3fKONegaiM-8awHzKdx93lz5d286O4iSjilbDMDdTjQ=s1360-w1360-h1020-rw",
+        "alt": "Family bathroom with bathtub"
+      }
+    ],
+    "amenities": [
+      "High-Speed Wi-Fi",
+      "65-inch Smart TV",
+      "In-Room Safe Box",
+      "Full Mini Bar & Refrigerator",
+      "Private Coffee Station",
+      "Air Conditioning & Heating",
+      "Kids' Welcome Amenities",
+      "Connecting Bedrooms"
+    ],
+    "unavailableDates": ["2026-09-27", "2026-10-05", "2026-10-06", "2026-10-11"]
+  },
+  {
+    "id": "royal-honeymoon-villa",
+    "title": "Royal Honeymoon Villa",
+    "category": "Signature Villa",
+    "pricePerNight": 46900,
+    "currency": "INR",
+    "capacity": 2,
+    "roomSize": "980 sq ft",
+    "bed": "Four-Poster King Bed",
+    "view": "Private Plunge Pool",
+    "image": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=85&w=1600&auto=format&fit=crop",
+    "imageAlt": "Romantic villa with four-poster bed and private plunge pool",
+    "description": "A private villa with four-poster bed, plunge pool and candlelit terrace dining.",
+    "overview": [
+      "The Royal Honeymoon Villa is the hotel's most romantic address: a four-poster king bed dressed in Egyptian cotton, a canopied sitting area and a private plunge pool set within high courtyard walls.",
+      "Evenings can be arranged on the terrace with candlelit dining for two, while mornings arrive with a complimentary champagne breakfast and slow room service.",
+      "The marble bathroom centres on a double-ended soaking tub beside a rain shower, with bespoke amenities drawn from Rajasthani rose and sandalwood."
+    ],
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=85&w=1800&auto=format&fit=crop",
+        "alt": "Four-poster bed in a romantic villa"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=85&w=1800&auto=format&fit=crop",
+        "alt": "Private plunge pool within courtyard walls"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?q=85&w=1800&auto=format&fit=crop",
+        "alt": "Luxury bed with layered silk textiles"
+      },
+      {
+        "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkHoXTNjJ_ag9P7XO0kkpbPCjAN8VbUr0LiZvlI0BZiQY8iQbwP3zRVII-T__zist9Ib00h8otxK95mHYzsQAFNz3VwkJs0s_hcqm7YT49eiWUOp5Da4GGMPy8Qbcyb4LfWcRYA=s1360-w1360-h1020-rw",
+        "alt": "Open-air terrace with loungers"
+      }
+    ],
+    "amenities": [
+      "High-Speed Wi-Fi",
+      "65-inch Smart TV",
+      "In-Room Safe Box",
+      "Full Mini Bar & Refrigerator",
+      "Private Plunge Pool",
+      "Air Conditioning & Heating",
+      "Candlelit Terrace Dining",
+      "Champagne Breakfast Included"
+    ],
+    "unavailableDates": ["2026-09-22", "2026-09-23", "2026-10-14", "2026-10-15"]
+  }
+]

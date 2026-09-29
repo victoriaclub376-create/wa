@@ -82,8 +82,19 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const room = getRoom(slug);
-  if (!room) return { title: "Room Not Found | Victoria Club Hotel" };
-  return { title: `${room.title} | Victoria Club Hotel`, description: room.description };
+  // The layout title template already appends "| Victoria Club Hotel".
+  if (!room) return { title: "Room Not Found" };
+  return {
+    title: room.title,
+    description: room.description,
+    alternates: { canonical: `/rooms/${room.id}` },
+    openGraph: {
+      type: "article",
+      title: `${room.title} | Victoria Club Hotel`,
+      description: room.description,
+      images: [{ url: room.image, alt: room.imageAlt }],
+    },
+  };
 }
 
 export default async function RoomDetailsPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -184,11 +195,11 @@ export default async function RoomDetailsPage({ params }: { params: Promise<{ sl
                     />
                   </div>
                   <div className="flex items-center justify-between gap-4 p-5">
-                    <div>
+                    <div className="min-w-0">
                       <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold">{candidate.category}</p>
                       <h3 className="mt-1 font-serif text-xl text-navy">{candidate.title}</h3>
                     </div>
-                    <span className="text-xs font-bold uppercase tracking-wider text-gold">
+                    <span className="shrink-0 text-xs font-bold uppercase tracking-wider text-gold">
                       Luxury Room
                     </span>
                   </div>

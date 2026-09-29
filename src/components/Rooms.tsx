@@ -98,8 +98,8 @@ export default function Rooms() {
                 </Link>
 
                 <div className="flex flex-1 flex-col p-5 sm:p-6">
-                  <div className="flex items-start justify-between gap-3">
-                    <h3 className="font-serif text-2xl leading-tight text-navy">
+                  <div className="flex flex-wrap items-start justify-between gap-x-3 gap-y-1">
+                    <h3 className="min-w-0 flex-1 font-serif text-2xl leading-tight text-navy">
                       <Link href={`/rooms/${room.id}`} className="transition-colors hover:text-gold-dark">
                         {room.title}
                       </Link>
@@ -131,10 +131,10 @@ export default function Rooms() {
                     </div>
                   </dl>
 
-                  <div className="mt-5 flex items-center justify-between gap-3">
+                  <div className="mt-5 flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
                     <Link
                       href={`/rooms/${room.id}`}
-                      className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-navy transition-colors hover:text-gold-dark"
+                      className="inline-flex items-center gap-2 whitespace-nowrap text-xs font-semibold uppercase tracking-[0.16em] text-navy transition-colors hover:text-gold-dark"
                     >
                       Explore room
                       <ArrowRight size={15} aria-hidden />
@@ -144,7 +144,7 @@ export default function Rooms() {
                       href="https://wa.me/+918684870142"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="rounded-sm bg-navy px-4 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-white transition-colors hover:bg-navy-light"
+                      className="whitespace-nowrap rounded-sm bg-navy px-4 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-white transition-colors hover:bg-navy-light"
                     >
                       Book Now
                     </a>

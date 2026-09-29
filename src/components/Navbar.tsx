@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Menu, Phone, X } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 
@@ -95,8 +96,9 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
-              className="relative block w-full overflow-hidden rounded-sm border border-gold bg-gold px-6 py-3 text-center text-xs font-semibold uppercase tracking-[0.2em] text-navy transition-colors duration-300 before:absolute before:inset-0 before:-z-0 before:translate-x-[-100%] before:bg-navy before:transition-transform before:duration-300 before:ease-out hover:text-gold hover:before:translate-x-0"
+              className="relative flex w-full items-center justify-center gap-2 overflow-hidden rounded-sm border border-gold bg-gold px-6 py-3 text-center text-xs font-semibold uppercase tracking-[0.2em] text-navy transition-colors duration-300 before:absolute before:inset-0 before:-z-0 before:translate-x-[-100%] before:bg-navy before:transition-transform before:duration-300 before:ease-out hover:text-gold hover:before:translate-x-0"
             >
+              <FaWhatsapp size={16} className="relative z-10" aria-hidden />
               <span className="relative z-10">ENQUIRE NOW</span>
             </a>
 
@@ -139,8 +141,9 @@ export default function Navbar() {
     target="_blank"
     rel="noopener noreferrer"
     onClick={() => setOpen(false)}
-    className="block w-full rounded-sm bg-gold px-6 py-3 text-center text-xs font-semibold uppercase tracking-[0.2em] text-navy transition-opacity hover:opacity-90"
+    className="flex w-full items-center justify-center gap-2 rounded-sm bg-gold px-6 py-3 text-center text-xs font-semibold uppercase tracking-[0.2em] text-navy transition-opacity hover:opacity-90"
   >
+    <FaWhatsapp size={17} aria-hidden />
     Book Now
   </a>
 </li>

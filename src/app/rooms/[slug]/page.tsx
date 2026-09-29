@@ -18,6 +18,26 @@ import RoomGallery from "@/components/RoomGallery";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import CallButton from "@/components/call/CallButton";
 import { getLuxuryRoomLabel, getRoom, rooms } from "@/lib/rooms";
+import {
+  breadcrumbSchema,
+  business,
+  schemaGraph,
+  serializeSchema,
+  webPageSchema,
+} from "@/lib/site";
+
+/** Builds a natural, per-room description from the room's own real data. */
+function roomDescription(room: NonNullable<ReturnType<typeof getRoom>>) {
+  return (
+    `${room.title} in Puri — a ${room.roomSize} ${room.category.toLowerCase()} for ` +
+    `${room.capacity} guests, with ${room.bed.toLowerCase()} and ${room.view.toLowerCase()}. ` +
+    `Free Wi-Fi, air conditioning and 24-hour room service. Call ${business.phoneDisplay}.`
+  );
+}
+
+function roomTitle(room: NonNullable<ReturnType<typeof getRoom>>) {
+  return `${room.title} in Puri, Odisha | Victoria Club Hotel`;
+}
 
 export function generateStaticParams() {
   return rooms.map((room) => ({ slug: room.id }));
@@ -26,17 +46,36 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const room = getRoom(slug);
-  // The layout title template already appends "| Victoria Club Hotel".
   if (!room) return { title: "Room Not Found" };
+
+  const title = roomTitle(room);
+  const description = roomDescription(room);
+
   return {
-    title: room.title,
-    description: room.description,
+    // `absolute` stops the root layout template appending the brand a second time.
+    title: { absolute: title },
+    description,
+    keywords: [
+      `${room.title} Puri`,
+      `${room.category} in Puri`,
+      `${room.bed} room Puri`,
+      "Victoria Club Hotel Puri",
+    ],
     alternates: { canonical: `/rooms/${room.id}` },
     openGraph: {
       type: "article",
-      title: `${room.title} | Victoria Club Hotel`,
-      description: room.description,
-      images: [{ url: room.image, alt: room.imageAlt }],
+      url: `/rooms/${room.id}`,
+      siteName: "Victoria Club Hotel",
+      title,
+      description,
+      locale: "en_IN",
+      images: [{ url: room.image, alt: room.imageAlt, width: 1600, height: 1067 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [room.image],
     },
   };
 }
@@ -47,8 +86,42 @@ export default async function RoomDetailsPage({ params }: { params: Promise<{ sl
   if (!room) notFound();
   const recommendations = rooms.filter((candidate) => candidate.id !== room.id);
 
+  const roomSchema = schemaGraph(
+    webPageSchema({
+      path: `/rooms/${room.id}`,
+      name: roomTitle(room),
+      description: roomDescription(room),
+    }),
+    breadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Rooms", path: "/rooms" },
+      { name: room.title, path: `/rooms/${room.id}` },
+    ]),
+    {
+      "@type": "Product",
+      "@id": `https://www.victoriaclubhotal.online/rooms/${room.id}#room`,
+      name: room.title,
+      description: roomDescription(room),
+      image: room.image,
+      category: room.category,
+      brand: { "@type": "Brand", name: "Victoria Club Hotel" },
+      offers: {
+        "@type": "Offer",
+        url: `https://www.victoriaclubhotal.online/rooms/${room.id}`,
+        priceCurrency: room.currency,
+        price: room.pricePerNight,
+        availability: "https://schema.org/InStock",
+        seller: { "@id": "https://www.victoriaclubhotal.online/#hotel" },
+      },
+    },
+  );
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeSchema(roomSchema) }}
+      />
       <Navbar />
       <main className="bg-cream pb-20">
         <RoomGallery images={room.gallery} title={room.title} />
@@ -57,11 +130,11 @@ export default async function RoomDetailsPage({ params }: { params: Promise<{ sl
             <nav aria-label="Breadcrumb" className="flex items-center gap-2">
               <Link href="/" className="transition hover:text-gold">Home</Link>
               <span>/</span>
-              <Link href="/#rooms" className="transition hover:text-gold">Rooms</Link>
+              <Link href="/rooms" className="transition hover:text-gold">Rooms</Link>
               <span>/</span>
-              <span className="text-navy">{room.category}</span>
+              <span className="text-navy">{room.title}</span>
             </nav>
-            <Link href="/#rooms" className="inline-flex items-center gap-1.5 font-semibold text-navy transition hover:text-gold">
+            <Link href="/rooms" className="inline-flex items-center gap-1.5 font-semibold text-navy transition hover:text-gold">
               <ChevronLeft size={15} />Back to all rooms
             </Link>
           </div>
@@ -121,7 +194,7 @@ export default async function RoomDetailsPage({ params }: { params: Promise<{ sl
                 <p className="text-xs font-bold uppercase tracking-[0.25em] text-gold">More to discover</p>
                 <h2 className="mt-2 font-serif text-3xl text-navy">Other Victoria Club stays</h2>
               </div>
-              <Link href="/#rooms" className="text-xs font-bold uppercase tracking-[0.15em] text-navy transition hover:text-gold">
+              <Link href="/rooms" className="text-xs font-bold uppercase tracking-[0.15em] text-navy transition hover:text-gold">
                 View all rooms
               </Link>
             </div>

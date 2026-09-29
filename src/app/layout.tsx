@@ -1,12 +1,21 @@
 import type { Metadata, Viewport } from "next";
 import BookingProvider from "@/components/BookingProvider";
 import "./globals.css";
+import {
+  absoluteUrl,
+  business,
+  hotelSchema,
+  organizationSchema,
+  schemaGraph,
+  serializeSchema,
+  siteName,
+  siteUrl,
+  webSiteSchema,
+} from "@/lib/site";
 
-const siteUrl = "https://www.victoriaclubhotal.online";
-const siteName = "Victoria Club Hotel";
-const siteTitle = "Victoria Club Hotel | Oceanfront Luxury in Puri";
+const siteTitle = "Victoria Club Hotel | Beachside Hotel & Rooms in Puri, Odisha";
 const siteDescription =
-  "Victoria Club Hotel is an oceanfront boutique hotel on Marine Drive Road, Puri. Elegant rooms, fine dining, warm hospitality and the beach just steps away. Call +91 8684870142 to reserve your stay.";
+  "Victoria Club Hotel is a boutique hotel on Sea Beach Road, Bali Sahi, Puri. Book sea-facing rooms, suites and a villa with restaurant, free Wi-Fi and parking. Call +91 8684870142.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -21,10 +30,12 @@ export const metadata: Metadata = {
     "Victoria Club Hotel",
     "Victoria Club Hotel Puri",
     "hotel in Puri",
-    "luxury hotel Puri Odisha",
+    "Puri Odisha hotel",
     "sea view hotel Puri",
-    "Marine Drive Puri hotel",
+    "Sea Beach Road Puri hotel",
+    "Bali Sahi Puri accommodation",
     "boutique hotel Odisha",
+    "rooms and suites in Puri",
     "book hotel in Puri",
   ],
   authors: [{ name: siteName, url: siteUrl }],
@@ -60,7 +71,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Victoria Club Hotel — oceanfront luxury stay in Puri, Odisha",
+        alt: "Victoria Club Hotel — beachside rooms and suites in Puri, Odisha",
       },
     ],
   },
@@ -91,6 +102,12 @@ export const metadata: Metadata = {
     email: true,
     address: true,
   },
+  other: {
+    "geo.region": "IN-OD",
+    "geo.placename": `${business.address.addressLocality}, ${business.address.addressRegion}`,
+    "geo.position": `${business.geo.latitude};${business.geo.longitude}`,
+    ICBM: `${business.geo.latitude}, ${business.geo.longitude}`,
+  },
 };
 
 export const viewport: Viewport = {
@@ -101,35 +118,29 @@ export const viewport: Viewport = {
   colorScheme: "light",
 };
 
-const hotelSchema = {
-  "@context": "https://schema.org",
-  "@type": "Hotel",
-  name: siteName,
-  url: siteUrl,
-  description: siteDescription,
-  telephone: "+91-8684870142",
-  image: `${siteUrl}/og-image.png`,
-  logo: `${siteUrl}/logo.png`,
-  priceRange: "₹₹",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Marine Drive Road, Sea Beach Rd, Bali Sahi",
-    addressLocality: "Puri",
-    addressRegion: "Odisha",
-    postalCode: "752001",
-    addressCountry: "IN",
-  },
-};
+/**
+ * One @graph for the whole site: Organization + WebSite + Hotel.
+ * Emitted once in the root layout so every page references the same @id and
+ * Google never receives two competing definitions of the business.
+ */
+const siteSchema = schemaGraph(
+  organizationSchema(),
+  webSiteSchema(),
+  hotelSchema(),
+);
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en-IN">
       <body className="antialiased">
         <script
           type="application/ld+json"
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(hotelSchema) }}
+          dangerouslySetInnerHTML={{ __html: serializeSchema(siteSchema) }}
         />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
+        <link rel="dns-prefetch" href="https://lh3.googleusercontent.com" />
+        <link rel="alternate" href={absoluteUrl("/sitemap.xml")} type="application/xml" />
         <BookingProvider>{children}</BookingProvider>
       </body>
     </html>

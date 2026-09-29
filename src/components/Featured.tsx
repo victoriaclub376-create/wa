@@ -37,14 +37,14 @@ export default function Featured() {
                 The Experience
               </p>
               <h2 className="font-serif text-3xl leading-snug text-white sm:text-4xl">
-                In the Heart of Bani Park,
+                On Sea Beach Road,
                 <br />
-                <span className="italic text-amber-100">Outstanding Views</span>
+                <span className="italic text-amber-100">Ocean Views</span>
               </h2>
               <div className="mx-auto mt-6 h-px w-20 bg-amber-100/50" />
               <p className="mx-auto mt-6 max-w-sm text-sm leading-relaxed text-white/70">
-                Wake to rooftop sunrises over the Pink City, dine under starlit
-                skies and unwind beside our tranquil courtyard pool.
+                Wake to sunrises over the Bay of Bengal, dine under starlit skies
+                and unwind beside our tranquil courtyard pool.
               </p>
               <Link
                 href="#gallery"

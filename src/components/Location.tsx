@@ -48,7 +48,7 @@ export default function Location() {
               <p className="mt-1 text-sm leading-relaxed text-navy/70">
                 Victoria Club Hotel,
                 <br />
-                Marine Drive Road, Sea Beach Rd, Bali Sahi, Puri, Odisha 752001
+                Marine Drive Road, Sea Beach Road, Bali Sahi, Puri, Odisha 752001
               </p>
             </div>
           </div>

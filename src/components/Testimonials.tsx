@@ -14,7 +14,7 @@ const testimonials = [
   },
   {
     quote:
-      "A true boutique gem in Bani Park. Impeccable housekeeping, superb breakfast and the quietest, most comfortable beds we have slept in on our entire Rajasthan trip.",
+      "A true boutique gem on the seafront. Impeccable housekeeping, superb breakfast and the quietest, most comfortable beds we have slept in on our entire Odisha trip.",
     name: "James Whitfield",
     detail: "Leisure Traveller • London",
   },

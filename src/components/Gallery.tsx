@@ -49,77 +49,77 @@ const photos = [
   },
   {
     src: "/gallery/img-1-1-300x300.jpg",
-    alt: "Gallery image 1",
+    alt: "Victoria Club Hotel exterior lit up at night",
     tall: false,
   },
   {
     src: "/gallery/king_queen-300x236.jpg",
-    alt: "Gallery image 2",
+    alt: "Four-poster bed in a Victoria Club Hotel guest room",
     tall: false,
   },
   {
     src: "/gallery/img-4.jpg",
-    alt: "Gallery image 3", 
+    alt: "Hotel chefs and staff beside a banquet table set for dinner", 
     tall: false,
   },
   {
     src: "/img-5.jpg",
-    alt: "Gallery image 4", 
+    alt: "Guest room with double bed and air conditioning", 
     tall: false,
   },
   {
     src: "/gallery/img-6.jpg",
-    alt: "Gallery image 5", 
+    alt: "Grilled fish plated at the hotel restaurant", 
     tall: false,
   },
   {
     src: "/gallery/img-7.jpg",
-    alt: "Gallery image 6", 
+    alt: "Guest room with four-poster bed and a wall-mounted television", 
     tall: false,
   },
   {
     src: "/gallery/img-8.jpg",
-    alt: "Gallery image 7", 
+    alt: "Four-poster bed beside a window at Victoria Club Hotel", 
     tall: false,
   },
   {
     src: "/gallery/img-9.jpg",
-    alt: "Gallery image 8", 
+    alt: "Four-poster bed dressed in gold linens", 
     tall: false,
   },
   {
     src: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnkXA44vCjgy_r0KheCTUW1Q0jmgGaB9BEjAbADWzAmGSj6tKM-WoDBGdcl9nPQYBN3kGU49Q12JAfho_jusYZ-qYTtshcCNsr5Bzlzv6B9vlJ5QnpEW1PuszSmW3ib9OhnFVoj_nBYq6dQ=s1360-w1360-h1020-rw",
-    alt: "Gallery image 9", 
+    alt: "Victoria Club Hotel courtyard lit with festive string lights", 
     tall: false,
   },
   {
     src: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmBWe4DFj-Q9xI_zt12bxzIkDItregTjwxIQn7o5An2g7qUuS6N2pD3668Xr13pkdJjlgmUfzJWhQw9FeW3fkU_tAAWEL7nGvzeslr2-sHTqVeyWp5cVAhA3qkxcLSmOvmnJO3L=s1360-w1360-h1020-rw",
-    alt: "Gallery image 10", 
+    alt: "Victoria Club Hotel at night overlooking Sea Beach Road", 
     tall: false,
   },
   {
     src: "/gallery/img-12.jpg",
-    alt: "Gallery image 11", 
+    alt: "Guests dining together at the hotel restaurant", 
     tall: false,
   },
   {
     src: "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SrL9aS5E3EGVkbc5odWaPKfMhBaW0_JEhrhmdzOOOWqYHx-RGta7fVmjBOJRZesC8kKoV53hXgP19reHK4tdZjzFzjFNmzPPKQ-gjJfXvuV2dn6MmJmZf6u8aM8uFjSqxyD6u4=s1360-w1360-h1020-rw",
-    alt: "Gallery image 13", 
+    alt: "Victoria Club Hotel entrance banner and sand sculpture", 
     tall: false,
   },
   {
     src: "https://media.istockphoto.com/id/1039616694/photo/modern-scandinavian-living-room-interior-3d-render.jpg?s=612x612&w=0&k=20&c=fexdb0CZTOXhbFEzigvfCOrXOwC4N6cBgrE1-0MrBJ0=",
-    alt: "Gallery image 15", 
+    alt: "Living room interior with a sofa and large windows", 
     tall: false,
   },
   {
     src: "https://r1imghtlak.mmtcdn.com/dfd18c6e4af611ed8e680a58a9feac02.jpeg?downsize=540:*",
-    alt: "Gallery image 16",
+    alt: "Rooftop lounge with window seating and hanging lights",
     tall: false,
   },
   {
     src: "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201808221622098319-abaefe1c76e211e98b850242ac110003.jpg?downsize=540:*",
-    alt: "Gallery image 17", 
+    alt: "Victoria Hotel entrance lit in green at night", 
     tall: false,
   }
 ];

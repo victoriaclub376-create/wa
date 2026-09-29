@@ -18,18 +18,19 @@ export default function Intro() {
           </h2>
           <div className="mt-6 h-px w-24 bg-olive/50" />
           <p className="mt-8 text-base leading-relaxed text-navy/70">
-            Nestled in the heart of Bani Park, Victoria Club Hotel blends old-world
-            Rajasthani charm with contemporary luxury. Every corner of our boutique
-            property has been crafted for guests who appreciate refined comfort —
-            from elegantly appointed suites and a rooftop restaurant serving
-            authentic cuisine, to a serene poolside courtyard where evenings unfold
-            in golden light.
+            Set along Sea Beach Road at Bali Sahi in Puri, Victoria Club Hotel pairs
+            the unhurried rhythm of the Odisha coast with contemporary luxury. Every
+            corner of our boutique property has been crafted for guests who
+            appreciate refined comfort — from sea-facing rooms and suites to a
+            multi-cuisine restaurant and a serene courtyard pool where evenings
+            unfold in soft light.
           </p>
           <p className="mt-4 text-base leading-relaxed text-navy/70">
             Our attentive team is devoted to making each stay memorable, whether
             you visit for leisure, celebration or business. Experience warm
-            hospitality, thoughtful amenities and timeless elegance — all just
-            minutes from Jaipur&apos;s iconic landmarks.
+            hospitality, thoughtful amenities and timeless elegance — all within
+            easy reach of Puri&apos;s Jagannath Temple and the long sweep of the
+            Bay of Bengal.
           </p>
           <Link
             href="#rooms"

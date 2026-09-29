@@ -27,7 +27,7 @@ const heroSlides = [
     alt: "Victoria Club Hotel oceanfront resort glowing at sunset",
     title: "Victoria Club Hotel",
     subtitle: "Sun-Kissed Beaches & Golden Sands",
-    location: "Marine Drive Road, Sea Beach Rd, Bali Sahi, Puri, Odisha 752001",
+    location: "Marine Drive Road, Sea Beach Road, Bali Sahi, Puri, Odisha 752001",
     phone: "+918684870142",
   },
   {
@@ -36,7 +36,7 @@ const heroSlides = [
     alt: "Victoria Club Hotel oceanfront resort glowing at sunset",
     title: "Victoria Club Hotel",
     subtitle: "A Moment of Comfort & Elegance",
-    location: "Marine Drive Road, Sea Beach Rd, Bali Sahi, Puri, Odisha 752001",
+    location: "Marine Drive Road, Sea Beach Road, Bali Sahi, Puri, Odisha 752001",
     phone: "+918684870142",
   },
   {
@@ -45,7 +45,7 @@ const heroSlides = [
     alt: "Luxury hotel entrance and evening pool view",
     title: "Victoria Club Hotel",
     subtitle: "Experience Bespoke Hospitality",
-    location: "Marine Drive Road, Sea Beach Rd, Bali Sahi, Puri, Odisha 752001",
+    location: "Marine Drive Road, Sea Beach Road, Bali Sahi, Puri, Odisha 752001",
     phone: "+918684870142",
   },
   {
@@ -54,7 +54,7 @@ const heroSlides = [
     alt: "Beautiful resort pool with comfortable sun loungers",
     title: "Victoria Club Hotel",
     subtitle: "Rejuvenate Your Mind & Soul",
-    location: "Marine Drive Road, Sea Beach Rd, Bali Sahi, Puri, Odisha 752001",
+    location: "Marine Drive Road, Sea Beach Road, Bali Sahi, Puri, Odisha 752001",
     phone: "+918684870142",
   },
   {
@@ -63,7 +63,7 @@ const heroSlides = [
     alt: "Elegant luxury bedroom suite with scenic views",
     title: "Victoria Club Hotel",
     subtitle: "Designed For Ultimate Perfection",
-    location: "Marine Drive Road, Sea Beach Rd, Bali Sahi, Puri, Odisha 752001",
+    location: "Marine Drive Road, Sea Beach Road, Bali Sahi, Puri, Odisha 752001",
     phone: "+918684870142",
   },
   {
@@ -72,7 +72,7 @@ const heroSlides = [
     alt: "Tropical beach resort with private palms",
     title: "Victoria Club Hotel",
     subtitle: "Sun-Kissed Beaches & Golden Sands",
-    location: "Marine Drive Road, Sea Beach Rd, Bali Sahi, Puri, Odisha 752001",
+    location: "Marine Drive Road, Sea Beach Road, Bali Sahi, Puri, Odisha 752001",
     phone: "+918684870142",
   },
   {
@@ -81,7 +81,7 @@ const heroSlides = [
     alt: "Modern luxury hotel interior and grand lobby area",
     title: "Victoria Club Hotel",
     subtitle: "Where Architecture Meets Art",
-    location: "Marine Drive Road, Sea Beach Rd, Bali Sahi, Puri, Odisha 752001",
+    location: "Marine Drive Road, Sea Beach Road, Bali Sahi, Puri, Odisha 752001",
     phone: "+918684870142",
   },
   {
@@ -90,7 +90,7 @@ const heroSlides = [
     alt: "Relaxing outdoor lounge area with sea view",
     title: "Victoria Club Hotel",
     subtitle: "Memories That Last A Lifetime",
-    location: "Marine Drive Road, Sea Beach Rd, Bali Sahi, Puri, Odisha 752001",
+    location: "Marine Drive Road, Sea Beach Road, Bali Sahi, Puri, Odisha 752001",
     phone: "+918684870142",
   },
 ];

@@ -6,6 +6,7 @@
 import { ChevronLeft, ChevronRight, CalendarDays } from "lucide-react";
 import { useMemo, useState } from "react";
 import { useBooking } from "./BookingProvider";
+import type { Room } from "@/lib/rooms";
 
 const weekdayLabels = ["S", "M", "T", "W", "T", "F", "S"];
 
@@ -20,7 +21,7 @@ function getNights(checkIn: string, checkOut: string) {
   return difference > 0 && difference % 86_400_000 === 0 ? difference / 86_400_000 : 0;
 }
 
-export default function AvailabilityWidget({ room }: { room: any }) {
+export default function AvailabilityWidget({ room }: { room: Room }) {
   const today = useMemo(() => new Date(), []);
   const [month, setMonth] = useState(new Date(today.getFullYear(), today.getMonth(), 1));
   const [checkIn, setCheckIn] = useState("");

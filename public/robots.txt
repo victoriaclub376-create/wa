@@ -1,4 +1,12 @@
+# Victoria Club Hotel - Puri, Odisha
 User-agent: *
 Allow: /
+
+# Assets that must stay crawlable for Google Search branding
+Allow: /favicon.ico
+Allow: /logo.png
+Allow: /og-image.png
+Allow: /icons/
+Allow: /site.webmanifest
 
 Sitemap: https://www.victoriaclubhotal.online/sitemap.xml

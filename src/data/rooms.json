@@ -200,12 +200,12 @@
     "capacity": 2,
     "roomSize": "560 sq ft",
     "bed": "King Bed",
-    "view": "Jaipur Skyline View",
+    "view": "Bay of Bengal View",
     "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=85&w=1600&auto=format&fit=crop",
-    "imageAlt": "Premier suite with king bed and sweeping city views",
-    "description": "A bright corner suite with lounge seating and the pink city skyline at dusk.",
+    "imageAlt": "Premier suite with king bed and sweeping views over the Bay of Bengal",
+    "description": "A bright corner suite with lounge seating and wide views over the Bay of Bengal at dusk.",
     "overview": [
-      "The Premier City Suite occupies a quiet corner of the hotel, with a separate lounge, floor-to-ceiling glazing and an outlook over Jaipur's terracotta rooftops toward the hills.",
+      "The Premier City Suite occupies a quiet corner of the hotel, with a separate lounge, floor-to-ceiling glazing and an outlook over the Bay of Bengal toward the horizon.",
       "A curated minibar, Nespresso station, generous work desk and 55-inch Smart TV make the suite equally suited to work trips and unhurried holidays.",
       "The ensuite bathroom pairs a deep soaking tub with a rain shower, dual vanity and premium amenities."
     ],
@@ -250,10 +250,10 @@
     "bed": "King Bed",
     "view": "Heritage Courtyard View",
     "image": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWk05tbWkW3jEs-mMsF9BKHIwgPjgtkna2ubz2zaeeGjMNFg6kCUJX5A-UtXgP1Ah6txNswJQsjRYGE08skZ2hPsFvKlcqLLh43ynqOl_uzMGE-5vye4o3r-3YizhV1RhnW1IUkh=s1360-w1360-h1020-rw",
-    "imageAlt": "Heritage room with king bed, arches and Rajasthani accents",
+    "imageAlt": "Heritage room with king bed, arches and traditional Odia accents",
     "description": "Restored arches, carved wood and soft lamp light in the hotel's oldest wing.",
     "overview": [
-      "The Heritage Club Room sits in the hotel's original wing, where restored arches, carved jharokha-inspired details and hand-block-printed fabrics honour the building's Rajasthani roots.",
+      "The Heritage Club Room sits in the hotel's original wing, where restored arches, carved stone details and handwoven Odia fabrics honour the building's Odia coastal roots.",
       "Modern comfort is quietly present: high-speed Wi-Fi, a 50-inch Smart TV, a well-stocked tea tray and blackout drapery for deep sleep.",
       "The bathroom combines sandstone finishes with a rain shower and botanical bath amenities."
     ],
@@ -268,7 +268,7 @@
       },
       {
         "src": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=85&w=1800&auto=format&fit=crop",
-        "alt": "Traditional Rajasthani interior details"
+        "alt": "Traditional carved stone interior details"
       },
       {
         "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnINVQdu01aYMaU3bd62sNsyKPsMo7_j3Y8cNdV-SAm479kZHNtK0ujhOdPFzcQ6UbvbfH4-2ZuX8aY2JgkyrSUnhT2nl2pzgiw1qknkyX-ZNveHVhG17YIBO2ep-5HUXh5cHs=s1360-w1360-h1020-rw",
@@ -351,7 +351,7 @@
     "overview": [
       "The Royal Honeymoon Villa is the hotel's most romantic address: a four-poster king bed dressed in Egyptian cotton, a canopied sitting area and a private plunge pool set within high courtyard walls.",
       "Evenings can be arranged on the terrace with candlelit dining for two, while mornings arrive with a complimentary champagne breakfast and slow room service.",
-      "The marble bathroom centres on a double-ended soaking tub beside a rain shower, with bespoke amenities drawn from Rajasthani rose and sandalwood."
+      "The marble bathroom centres on a double-ended soaking tub beside a rain shower, with bespoke amenities drawn from local coastal botanicals."
     ],
     "gallery": [
       {

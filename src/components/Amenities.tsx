@@ -17,7 +17,7 @@ const amenities = [
   {
     icon: UtensilsCrossed,
     title: "Restaurant",
-    desc: "Rooftop multi-cuisine dining with authentic Rajasthani flavours.",
+    desc: "Multi-cuisine dining with Odisha specialities and classic Indian favourites.",
   },
   {
     icon: WashingMachine,

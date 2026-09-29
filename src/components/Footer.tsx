@@ -40,7 +40,8 @@ function YoutubeIcon() {
 const navLinks = [
   { label: "Home", href: "/#home" },
   { label: "About", href: "/#about" },
-  { label: "Rooms", href: "/#rooms" },
+  { label: "Rooms", href: "/rooms" },
+  { label: "Amenities", href: "/#amenities" },
   { label: "Gallery", href: "/#gallery" },
   { label: "Contact", href: "/#contact" },
 ];
@@ -89,8 +90,8 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-6 text-sm leading-relaxed text-white/60">
-              A boutique luxury hotel in the heart of Bani Park, Jaipur — where
-              timeless elegance meets warm Rajasthani hospitality.
+              A boutique hotel on Sea Beach Road in Puri, Odisha — where timeless
+              elegance meets warm coastal hospitality.
             </p>
             <div className="mt-7 flex gap-3">
               {socials.map((s) => (
@@ -139,18 +140,18 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Mail size={17} aria-hidden className="mt-0.5 shrink-0 text-amber-100" />
                 <a
-                  href="mailto:stay@victoriaclubhotel.com"
+                  href="mailto:reservations@victoriaclubhotel.com"
                   className="break-all transition-colors hover:text-amber-100"
                 >
-                  stay@victoriaclubhotel.com
+                  reservations@victoriaclubhotel.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={17} aria-hidden className="mt-0.5 shrink-0 text-amber-100" />
                 <span className="min-w-0">
-                  Kabir Marg, Bani Park,
+                  Victoria Club Hotel, Marine Drive Road,
                   <br />
-                  Marine Drive Road, Sea Beach Rd, Bali Sahi, Puri, Odisha 752001
+                  Sea Beach Road, Bali Sahi, Puri, Odisha 752001
                 </span>
               </li>
             </ul>

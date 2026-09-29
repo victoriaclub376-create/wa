@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import { Phone } from "lucide-react";
 
 const PHONE_E164 = "+918684870142";
@@ -22,14 +22,8 @@ const GRACE_ANDROID_MS = 2500;
 const GRACE_IOS_MS = 3000;
 
 export default function CallButton() {
-  const [visible, setVisible] = useState(false);
   const handedOff = useRef(false);
   const fallbackTimer = useRef<number | null>(null);
-
-  useEffect(() => {
-    const timer = window.setTimeout(() => setVisible(true), 900);
-    return () => window.clearTimeout(timer);
-  }, []);
 
   /* If the page loses focus / is hidden, another app (Truecaller, the app chooser
      or the dialer) has taken over - so our own fallback must stay quiet. */
@@ -93,9 +87,7 @@ export default function CallButton() {
       onClick={handleCall}
       aria-label={`Call Victoria Club Hotel on ${PHONE_SPOKEN} (opens Truecaller when installed)`}
       title={`Call Victoria Club Hotel on ${PHONE_SPOKEN}`}
-      className={`group floating-action-left fixed z-[90] flex h-12 w-12 items-center justify-center rounded-full bg-emerald-600 text-white shadow-xl shadow-black/25 transition-all duration-500 hover:scale-110 hover:bg-emerald-700 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-emerald-300 sm:h-14 sm:w-14 ${
-        visible ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-6 opacity-0"
-      }`}
+      className="floating-action floating-action-left group fixed z-[90] flex h-12 w-12 items-center justify-center rounded-full bg-emerald-600 text-white shadow-xl shadow-black/25 transition-all duration-500 hover:scale-110 hover:bg-emerald-700 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-emerald-300 sm:h-14 sm:w-14"
     >
       <Phone size={26} strokeWidth={2.5} aria-hidden="true" />
 

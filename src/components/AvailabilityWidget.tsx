@@ -75,7 +75,7 @@ export default function AvailabilityWidget({ room }: { room: any }) {
           >
             <ChevronLeft size={17} />
           </button>
-          <p className="text-xs font-bold uppercase tracking-[0.16em] text-navy">
+          <p className="min-w-0 truncate text-[11px] font-bold uppercase tracking-[0.1em] text-navy sm:text-xs sm:tracking-[0.16em]">
             {month.toLocaleString("en-US", { month: "long", year: "numeric" })}
           </p>
           <button
@@ -131,8 +131,8 @@ export default function AvailabilityWidget({ room }: { room: any }) {
         </div>
       </div>
 
-      <div className="mt-5 grid grid-cols-2 gap-3">
-        <label>
+      <div className="mt-5 grid grid-cols-2 gap-2 sm:gap-3">
+        <label className="min-w-0">
           <span className="mb-1 block text-[10px] font-bold uppercase tracking-[0.13em] text-navy/55">Check-in</span>
           <input
             type="date"
@@ -142,17 +142,17 @@ export default function AvailabilityWidget({ room }: { room: any }) {
               setCheckIn(event.target.value);
               if (checkOut && event.target.value >= checkOut) setCheckOut("");
             }}
-            className="w-full rounded-sm border border-navy/15 bg-white px-2 py-2 text-xs text-navy outline-none focus:border-gold"
+            className="w-full min-w-0 rounded-sm border border-navy/15 bg-white px-2 py-2 text-xs text-navy outline-none focus:border-gold"
           />
         </label>
-        <label>
+        <label className="min-w-0">
           <span className="mb-1 block text-[10px] font-bold uppercase tracking-[0.13em] text-navy/55">Check-out</span>
           <input
             type="date"
             min={checkIn || toDateString(today)}
             value={checkOut}
             onChange={(event) => setCheckOut(event.target.value)}
-            className="w-full rounded-sm border border-navy/15 bg-white px-2 py-2 text-xs text-navy outline-none focus:border-gold"
+            className="w-full min-w-0 rounded-sm border border-navy/15 bg-white px-2 py-2 text-xs text-navy outline-none focus:border-gold"
           />
         </label>
       </div>

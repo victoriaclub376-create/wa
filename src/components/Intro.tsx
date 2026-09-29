@@ -5,13 +5,13 @@ import Reveal from "./Reveal";
 
 export default function Intro() {
   return (
-    <section id="about" className="bg-cream py-24 lg:py-32">
+    <section id="about" className="bg-cream py-16 sm:py-20 lg:py-32">
       <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2 lg:gap-20 lg:px-8">
         <Reveal>
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.35em] text-olive">
             Victoria Club Hotel
           </p>
-          <h2 className="font-serif text-4xl leading-tight text-navy sm:text-5xl">
+          <h2 className="font-serif text-3xl leading-tight text-navy sm:text-4xl lg:text-5xl">
             Discover a New Look
             <br />
             Of Hotel
@@ -48,10 +48,10 @@ export default function Intro() {
               width={1400}
               height={1600}
               loading="lazy"
-              className="h-[480px] w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-[560px]"
+              className="h-[320px] w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-[440px] lg:h-[560px]"
             />
           </div>
-          <div className="absolute -bottom-6 -left-6 hidden rounded-sm bg-navy px-8 py-6 text-white shadow-xl sm:block">
+          <div className="absolute -bottom-6 left-6 hidden rounded-sm bg-navy px-8 py-6 text-white shadow-xl sm:block lg:-left-6">
             <p className="font-serif text-4xl text-amber-100">25+</p>
             <p className="mt-1 text-xs uppercase tracking-[0.2em] text-white/70">
               Years of Hospitality

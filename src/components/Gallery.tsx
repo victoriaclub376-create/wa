@@ -155,7 +155,7 @@ const photos = [
 
   return (
     <>
-      <section id="gallery" className="bg-cream py-24 lg:py-32">
+      <section id="gallery" className="bg-cream py-16 sm:py-20 lg:py-32">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <Reveal className="mb-14 text-center">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-olive">

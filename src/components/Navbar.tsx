@@ -104,26 +104,9 @@ export default function Navbar() {
 
         </div>
 
-        {/* Call + WhatsApp icons - mobile AUR laptop dono par dikhte hain */}
-        <div className="flex items-center gap-2">
-          <a
-            href="tel:+918684870142"
-            aria-label="Call Victoria Club Hotel on +91 8684870142"
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-600 text-white shadow-md shadow-black/25 transition hover:scale-105 hover:bg-emerald-700"
-          >
-            <Phone size={18} aria-hidden />
-          </a>
-          <a
-            href="https://wa.me/918684870142?text=Hello%20Victoria%20Club%20Hotel%2C%20I%20would%20like%20to%20book%20a%20stay."
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Chat with Victoria Club Hotel on WhatsApp"
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#25D366] text-white shadow-md shadow-black/25 transition hover:scale-105"
-          >
-            <FaWhatsapp size={20} aria-hidden />
-          </a>
-
-          <button className="rounded-sm p-2 text-white lg:hidden" onClick={() => setOpen((current) => !current)} aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} aria-controls="mobile-nav">
+        {/* Mobile menu button (Call/WhatsApp sirf floating buttons par hain) */}
+        <div className="flex items-center lg:hidden">
+          <button className="rounded-sm p-2 text-white" onClick={() => setOpen((current) => !current)} aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} aria-controls="mobile-nav">
             {open ? <X size={25} aria-hidden /> : <Menu size={25} aria-hidden />}
           </button>
         </div>

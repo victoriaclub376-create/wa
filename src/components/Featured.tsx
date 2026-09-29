@@ -5,11 +5,11 @@ import Reveal from "./Reveal";
 
 export default function Featured() {
   return (
-    <section className="bg-background py-24 lg:py-32">
+    <section className="bg-background py-16 sm:py-20 lg:py-32">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <Reveal className="grid overflow-hidden rounded-sm shadow-xl shadow-navy/10 lg:grid-cols-[1fr_1.1fr_1fr]">
           {/* Left — dining */}
-          <div className="relative h-72 lg:h-auto lg:min-h-[520px]">
+          <div className="relative h-56 sm:h-72 lg:h-auto lg:min-h-[520px]">
             <Image
               src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1200&auto=format&fit=crop"
               alt="Fine dining restaurant with beautifully plated cuisine"
@@ -21,7 +21,7 @@ export default function Featured() {
           </div>
 
           {/* Center — text panel */}
-          <div className="relative flex flex-col items-center justify-center bg-navy px-8 py-16 text-center lg:px-12">
+          <div className="relative flex flex-col items-center justify-center bg-navy px-6 py-12 text-center sm:px-8 sm:py-16 lg:px-12">
             <div className="absolute inset-0 opacity-20">
               <Image
                 src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1200&auto=format&fit=crop"
@@ -57,7 +57,7 @@ export default function Featured() {
           </div>
 
           {/* Right — scenic */}
-          <div className="relative h-72 lg:h-auto lg:min-h-[520px]">
+          <div className="relative h-56 sm:h-72 lg:h-auto lg:min-h-[520px]">
             <Image
               src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QWC2PpIG7HBt6lJZ-BaDdP7v-6hdqI_h1J1ymtZmVCBgFW7excFBT0b3Hy0DfD1PWijND5QtieSHen3ulFFMJ8YASu7O5diP_Hj03T8LSRO9aC4oVRDth_TtIHurz4k1wQteGDFA=s1360-w1360-h1020-rw"
               alt="Scenic golden sunset over serene waters"

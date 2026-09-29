@@ -106,7 +106,7 @@ function BookingModal({ defaults, onClose }: { defaults: BookingDefaults; onClos
         role="dialog"
         aria-modal="true"
         aria-labelledby="booking-title"
-        className="relative max-h-[94vh] w-full overflow-y-auto rounded-t-3xl bg-cream shadow-2xl sm:max-w-2xl sm:rounded-2xl"
+        className="relative max-h-[92dvh] w-full overflow-y-auto rounded-t-3xl bg-cream shadow-2xl sm:max-h-[94vh] sm:max-w-2xl sm:rounded-2xl"
         onMouseDown={(event) => event.stopPropagation()}
       >
         <button
@@ -146,7 +146,7 @@ function BookingModal({ defaults, onClose }: { defaults: BookingDefaults; onClos
             </button>
           </div>
         ) : (
-          <div className="p-6 pt-12 sm:p-9 sm:pt-10">
+          <div className="p-6 pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-12 sm:p-9 sm:pt-10">
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">Victoria Club Reservations</p>
             <h2 id="booking-title" className="mt-2 font-serif text-3xl text-navy">Reserve your escape</h2>
             <p className="mt-2 text-sm text-navy/60">Secure your preferred room in just a few details.</p>

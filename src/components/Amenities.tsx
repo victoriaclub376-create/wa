@@ -43,7 +43,7 @@ const amenities = [
 
 export default function Amenities() {
   return (
-    <section id="amenities" className="relative overflow-hidden bg-navy py-20 sm:py-24 lg:py-28">
+    <section id="amenities" className="relative overflow-hidden bg-navy py-16 sm:py-20 lg:py-28">
       <div className="pointer-events-none absolute inset-0 opacity-[0.06]">
         <div
           className="h-full w-full bg-cover bg-center"
@@ -58,7 +58,7 @@ export default function Amenities() {
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-amber-100/80">
             Hotel Facilities
           </p>
-          <h2 className="font-serif text-4xl text-white sm:text-5xl">
+          <h2 className="font-serif text-3xl text-white sm:text-4xl lg:text-5xl">
             Our Best Amenities
           </h2>
           <div className="mx-auto mt-6 h-px w-20 bg-amber-100/50" />

@@ -40,7 +40,7 @@ export default function Testimonials() {
   const t = testimonials[index];
 
   return (
-    <section className="relative overflow-hidden bg-black py-24 lg:py-32">
+    <section className="relative overflow-hidden bg-black py-16 sm:py-20 lg:py-32">
       <div className="pointer-events-none absolute inset-0 opacity-10">
         <div
           className="h-full w-full bg-cover bg-center"

@@ -106,7 +106,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[760px] items-center justify-center overflow-hidden pb-44 pt-32 sm:min-h-[800px]"
+      className="relative flex min-h-[640px] flex-col items-center justify-center overflow-hidden pb-20 pt-28 sm:min-h-[720px] sm:pt-32 lg:min-h-[800px] lg:pb-44 lg:pt-32"
     >
       {/* 1. BACKGROUND CAROUSEL SLIDER WITH KEN BURNS ZOOM ANIMATION */}
       <div className="absolute inset-0 z-0">
@@ -157,7 +157,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-[1] bg-gradient-to-b from-navy/80 via-navy/55 to-navy/90" />
 
       {/* 2. DYNAMIC SLIDE CONTENT WITH ANIMATIONS */}
-      <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
+      <div className="relative z-10 mx-auto w-full max-w-4xl px-5 text-center sm:px-6">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeIndex}
@@ -180,7 +180,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 25, scale: 0.95 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="font-serif text-5xl leading-[0.95] text-white sm:text-6xl lg:text-8xl drop-shadow-lg"
+              className="font-serif text-[2.35rem] leading-[1.05] text-white drop-shadow-lg sm:text-6xl sm:leading-[0.95] lg:text-8xl"
             >
               {heroSlides[activeIndex].title}
             </motion.h1>
@@ -189,7 +189,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.45 }}
-              className="mt-6 text-sm uppercase tracking-[0.28em] text-white/90 sm:text-base font-medium"
+              className="mt-5 text-[11px] font-medium uppercase tracking-[0.22em] text-white/90 sm:mt-6 sm:text-base sm:tracking-[0.28em]"
             >
               {heroSlides[activeIndex].subtitle}
             </motion.p>
@@ -199,7 +199,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.6 }}
-              className="mt-5 flex items-center justify-center gap-2 text-sm text-white/75"
+              className="mt-4 flex flex-wrap items-center justify-center gap-2 text-[13px] leading-5 text-white/75 sm:mt-5 sm:text-sm"
             >
               <MapPin size={16} aria-hidden className="text-gold animate-bounce" />
               {heroSlides[activeIndex].location}
@@ -240,7 +240,7 @@ export default function Hero() {
             guests: Number(guests),
           });
         }}
-        className="absolute bottom-10 z-20 mx-5 grid w-[calc(100%-2.5rem)] max-w-[1100px] gap-3 rounded-xl border border-white/20 bg-white/95 p-4 text-left shadow-2xl backdrop-blur sm:grid-cols-2 lg:grid-cols-[1.05fr_1.05fr_.85fr_1.2fr_auto] lg:items-end lg:p-5"
+        className="relative z-20 mx-5 mt-8 grid w-[calc(100%-2.5rem)] max-w-[1100px] gap-3 rounded-xl border border-white/20 bg-white/95 p-4 text-left shadow-2xl backdrop-blur sm:mt-10 sm:grid-cols-2 lg:absolute lg:bottom-10 lg:mt-0 lg:grid-cols-[1.05fr_1.05fr_.85fr_1.2fr_auto] lg:items-end lg:p-5"
       >
         <label className="min-w-0">
           <span className="mb-1.5 flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.15em] text-navy/60">
@@ -299,7 +299,7 @@ export default function Hero() {
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.97 }}
           type="submit"
-          className="inline-flex h-12 items-center justify-center gap-2 rounded-sm bg-gold px-6 text-xs font-bold uppercase tracking-[0.16em] text-navy shadow-md transition hover:bg-gold-dark"
+          className="inline-flex h-12 items-center justify-center gap-2 rounded-sm bg-gold px-6 text-xs font-bold uppercase tracking-[0.16em] text-navy shadow-md transition hover:bg-gold-dark sm:col-span-2 lg:col-span-1"
         >
           <Search size={16} /> Search
         </motion.button>

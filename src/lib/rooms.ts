@@ -1,13 +1,6 @@
 
 
 
-
-
-
-
-
-
-
 import roomData from "@/data/rooms.json";
 
 export type RoomGalleryImage = {

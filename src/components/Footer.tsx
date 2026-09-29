@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { MapPin, Mail, Phone } from "lucide-react";
 
@@ -65,14 +66,19 @@ export default function Footer() {
       </div>
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-navy/60 via-navy/85 to-navy" />
 
-      <div className="relative mx-auto max-w-7xl px-5 py-20 lg:px-8">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+      <div className="relative mx-auto max-w-7xl px-5 py-16 sm:py-20 lg:px-8">
+        <div className="grid gap-10 sm:gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3">
-              <span className="leading-tight">
-            <img src="https://victriaclubhotel.com/wp-content/uploads/2024/11/logo-header.png" alt="Victoria Club Hotel" className="flex h-20 w-20 " />
-          </span>
+            <div className="flex min-w-0 items-center gap-3">
+              <Image
+                src="/logo.png"
+                alt="Victoria Club Hotel"
+                width={194}
+                height={73}
+                loading="lazy"
+                className="h-11 w-auto shrink-0 sm:h-12"
+              />
               <span className="leading-tight">
                 <span className="block font-serif text-xl tracking-wide">
                   Victoria Club
@@ -125,7 +131,7 @@ export default function Footer() {
             <ul className="mt-5 space-y-4 text-sm text-white/60">
               <li className="flex items-start gap-3">
                 <Phone size={17} aria-hidden className="mt-0.5 shrink-0 text-amber-100" />
-                <a href="tel:+91 8684870142" className="transition-colors hover:text-amber-100">
+                <a href="tel:+918684870142" className="whitespace-nowrap transition-colors hover:text-amber-100">
                   +91 8684870142 
                 </a>
                 
@@ -134,16 +140,18 @@ export default function Footer() {
                 <Mail size={17} aria-hidden className="mt-0.5 shrink-0 text-amber-100" />
                 <a
                   href="mailto:stay@victoriaclubhotel.com"
-                  className="transition-colors hover:text-amber-100"
+                  className="break-all transition-colors hover:text-amber-100"
                 >
                   stay@victoriaclubhotel.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={17} aria-hidden className="mt-0.5 shrink-0 text-amber-100" />
-                Kabir Marg, Bani Park,
-                <br />
-               Marine Drive Road, Sea Beach Rd, Bali Sahi, Puri, Odisha 752001
+                <span className="min-w-0">
+                  Kabir Marg, Bani Park,
+                  <br />
+                  Marine Drive Road, Sea Beach Rd, Bali Sahi, Puri, Odisha 752001
+                </span>
               </li>
             </ul>
           </div>

@@ -25,42 +25,56 @@
   --font-serif: "Playfair Display Variable", Georgia, serif;
 }
 
-/* Mobile Responsiveness & Overflow Control */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
+/* Mobile Responsiveness & Overflow Control
+   NOTE: everything below lives in @layer base on purpose. Plain (unlayered) rules
+   outrank Tailwind utilities, which previously forced `height: auto` on every
+   image and silently broke the sizing utilities used across the site. */
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
 
-html {
-  scroll-behavior: smooth;
-  width: 100%;
-  max-width: 100vw;
-  overflow-x: hidden;
-}
+  html {
+    scroll-behavior: smooth;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
 
-body {
-  min-width: 320px;
-  width: 100%;
-  max-width: 100vw;
-  overflow-x: hidden;
-  background: var(--background);
-  color: var(--foreground);
-  font-family: "Inter Variable", Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
+  body {
+    min-width: 320px;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: "Inter Variable", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-wrap: break-word;
+  }
 
-/* Fluid Responsive Typography & Images */
-img, video, canvas, svg {
-  max-width: 100%;
-  height: auto;
-}
+  /* Fluid Responsive Typography & Images */
+  img, video, canvas, svg {
+    max-width: 100%;
+    height: auto;
+  }
 
-h1, h2, h3, h4 {
-  font-family: "Playfair Display Variable", Georgia, serif;
-  word-break: break-word;
-}
+  h1, h2, h3, h4 {
+    font-family: "Playfair Display Variable", Georgia, serif;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
 
-section[id] {
-  scroll-margin-top: 74px;
+  /* Long e-mail addresses / URLs / phone labels must never create a sideways scroll */
+  a, p, li, dd, dt, figcaption, label, span, small, strong {
+    overflow-wrap: break-word;
+  }
+
+  section[id] {
+    scroll-margin-top: 74px;
+  }
 }
 
 ::selection {
@@ -85,7 +99,7 @@ section[id] {
 /* Mobile Screen Utilities */
 @media (max-width: 640px) {
   section[id] {
-    scroll-margin-top: 60px;
+    scroll-margin-top: 72px;
   }
 }
 
@@ -105,4 +119,31 @@ section[id] {
       div[class*="dev-tools"] {
         display: none !important;
       }
+}
+
+/* ------------------------------------------------------------------
+   Floating action buttons (Call + WhatsApp)
+   Keeps them clear of notches / rounded corners / the iOS home bar on
+   phones and small tablets while keeping the original 1.25rem offset.
+------------------------------------------------------------------ */
+@layer components {
+  .floating-action-left {
+    left: max(1.25rem, env(safe-area-inset-left));
+    bottom: max(1.25rem, env(safe-area-inset-bottom));
+  }
+
+  .floating-action-right {
+    right: max(1.25rem, env(safe-area-inset-right));
+    bottom: max(1.25rem, env(safe-area-inset-bottom));
+  }
+}
+
+@media (max-width: 400px) {
+  .floating-action-left {
+    left: max(0.875rem, env(safe-area-inset-left));
+  }
+
+  .floating-action-right {
+    right: max(0.875rem, env(safe-area-inset-right));
+  }
 }

@@ -84,7 +84,7 @@ export default function Navbar() {
         <div className="hidden items-center gap-3 lg:flex xl:gap-4">
           <a
            href="tel:+918684870142"
-           className="flex items-center gap-2 whitespace-nowrap text-xs text-white/80 transition-colors duration-300 hover:text-gold"
+           className="hidden items-center gap-2 whitespace-nowrap text-xs text-white/80 transition-colors duration-300 hover:text-gold xl:flex"
           aria-label="Call Victoria Club Hotel">
           <Phone size={14} aria-hidden="true" />
            <span>+91 8684870142</span>  
@@ -104,8 +104,8 @@ export default function Navbar() {
 
         </div>
 
-        {/* Mobile: Call + WhatsApp icons header me hamesha dikhte hain */}
-        <div className="flex items-center gap-2 lg:hidden">
+        {/* Call + WhatsApp icons - mobile AUR laptop dono par dikhte hain */}
+        <div className="flex items-center gap-2">
           <a
             href="tel:+918684870142"
             aria-label="Call Victoria Club Hotel on +91 8684870142"

@@ -7,7 +7,7 @@ export default function WhatsAppButton() {
   return (
       
     <a
-  href="https://wa.me/918684870142?text=Hello%20Victoria%20Club%20Hotel%2C%20I%20would%20like%20to%20book%20a%20stay."
+  href="https://wa.me/919728192135?text=Hello%20Victoria%20Club%20Hotel%2C%20I%20would%20like%20to%20book%20a%20stay."
   target="_blank"
   rel="noopener noreferrer"
   aria-label="Chat with us on WhatsApp"

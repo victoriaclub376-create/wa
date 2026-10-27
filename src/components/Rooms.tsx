@@ -141,7 +141,7 @@ export default function Rooms() {
                     </Link>
 
                     <a
-                      href="https://wa.me/+918684870142"
+                      href="https://wa.me/+919728192135"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="whitespace-nowrap rounded-sm bg-navy px-4 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-white transition-colors hover:bg-navy-light"

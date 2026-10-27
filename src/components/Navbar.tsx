@@ -87,12 +87,12 @@ export default function Navbar() {
            className="hidden items-center gap-2 whitespace-nowrap text-xs text-white/80 transition-colors duration-300 hover:text-gold xl:flex"
           aria-label="Call Victoria Club Hotel">
           <Phone size={14} aria-hidden="true" />
-           <span>+91 8684870142</span>  
+           <span>+91 9728192135</span>  
            </a>
  
         
           <a
-              href="https://wa.me/+918684870142"
+              href="https://wa.me/+919728192135"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
@@ -134,13 +134,13 @@ export default function Navbar() {
                 className="flex items-center justify-center gap-2 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-white/85 transition-colors hover:text-gold"
               >
                 <Phone size={15} aria-hidden />
-                +91 8684870142
+                +91 972819213
               </a>
             </li>
 
          <li className="pt-3">
      <a
-    href="https://wa.me/918684870142?text=Hello%20Victoria%20Club%20Hotel%2C%20I%20would%20like%20to%20book%20a%20stay."
+    href="https://wa.me/919728192135?text=Hello%20Victoria%20Club%20Hotel%2C%20I%20would%20like%20to%20book%20a%20stay."
     target="_blank"
     rel="noopener noreferrer"
     onClick={() => setOpen(false)}

@@ -3,8 +3,8 @@
 import { useCallback, useEffect, useRef } from "react";
 import { Phone } from "lucide-react";
 
-const PHONE_E164 = "+918684870142";
-const PHONE_SPOKEN = "+91 8684870142";
+const PHONE_E164 = "+919728192135";
+const PHONE_SPOKEN = "+91 9728192135";
 const TEL_URL = `tel:${PHONE_E164}`;
 const CALL_QUERY = encodeURIComponent(PHONE_SPOKEN);
 

@@ -187,7 +187,7 @@ export default function AvailabilityWidget({ room }: { room: Room }) {
     type="button"
           onClick={() => {
             openBooking({ roomId: room?.id, checkIn, checkOut, guests: Number(guests) });
-            window.open("https://wa.me/918684870142", "_blank");
+            window.open("https://wa.me/91928192135", "_blank");
           }}
           className="mt-4 w-full rounded-sm bg-gold px-5 py-3.5 text-xs font-bold uppercase tracking-[0.18em] text-navy transition hover:bg-gold-dark"
         >

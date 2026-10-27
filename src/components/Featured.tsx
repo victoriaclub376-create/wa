@@ -63,6 +63,7 @@ export default function Featured() {
               alt="Scenic golden sunset over serene waters"
               fill
               loading="lazy"
+              
               sizes="(max-width: 1024px) 100vw, 33vw"
               className="object-cover transition-transform duration-700 hover:scale-105"
             />

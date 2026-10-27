@@ -28,7 +28,7 @@ const heroSlides = [
     title: "Victoria Club Hotel",
     subtitle: "Sun-Kissed Beaches & Golden Sands",
     location: "Marine Drive Road, Sea Beach Road, Bali Sahi, Puri, Odisha 752001",
-    phone: "+918684870142",
+    phone: "+919728192135",
   },
   {
     id: "slide-2",
@@ -37,7 +37,7 @@ const heroSlides = [
     title: "Victoria Club Hotel",
     subtitle: "A Moment of Comfort & Elegance",
     location: "Marine Drive Road, Sea Beach Road, Bali Sahi, Puri, Odisha 752001",
-    phone: "+918684870142",
+    phone: "+919728192135",
   },
   {
     id: "slide-3",
@@ -46,7 +46,7 @@ const heroSlides = [
     title: "Victoria Club Hotel",
     subtitle: "Experience Bespoke Hospitality",
     location: "Marine Drive Road, Sea Beach Road, Bali Sahi, Puri, Odisha 752001",
-    phone: "+918684870142",
+    phone: "+919728192135",
   },
   {
     id: "slide-4",
@@ -55,7 +55,7 @@ const heroSlides = [
     title: "Victoria Club Hotel",
     subtitle: "Rejuvenate Your Mind & Soul",
     location: "Marine Drive Road, Sea Beach Road, Bali Sahi, Puri, Odisha 752001",
-    phone: "+918684870142",
+    phone: "+919728192135",
   },
   {
     id: "slide-5",
@@ -64,7 +64,7 @@ const heroSlides = [
     title: "Victoria Club Hotel",
     subtitle: "Designed For Ultimate Perfection",
     location: "Marine Drive Road, Sea Beach Road, Bali Sahi, Puri, Odisha 752001",
-    phone: "+918684870142",
+  phone: "+919728192135",
   },
   {
     id: "slide-6",
@@ -73,7 +73,7 @@ const heroSlides = [
     title: "Victoria Club Hotel",
     subtitle: "Sun-Kissed Beaches & Golden Sands",
     location: "Marine Drive Road, Sea Beach Road, Bali Sahi, Puri, Odisha 752001",
-    phone: "+918684870142",
+    phone: "+919728192135",
   },
   {
     id: "slide-7",
@@ -82,7 +82,7 @@ const heroSlides = [
     title: "Victoria Club Hotel",
     subtitle: "Where Architecture Meets Art",
     location: "Marine Drive Road, Sea Beach Road, Bali Sahi, Puri, Odisha 752001",
-    phone: "+918684870142",
+    phone: "+919728192135",
   },
   {
     id: "slide-8",
@@ -91,7 +91,7 @@ const heroSlides = [
     title: "Victoria Club Hotel",
     subtitle: "Memories That Last A Lifetime",
     location: "Marine Drive Road, Sea Beach Road, Bali Sahi, Puri, Odisha 752001",
-    phone: "+918684870142",
+  phone: "+919728192135",
   },
 ];
 
